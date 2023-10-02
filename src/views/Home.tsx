@@ -28,7 +28,7 @@ const Home = () => {
       try {
         const date =new Date();
         const todaysDtae = format(date, 'yyyy-MM-dd');
-        const fiveDaysAgoDate = format(sub(date, {days: 5}), 'yyyy-MM-dd');
+        const fiveDaysAgoDate = format(sub(date, {days: 4}), 'yyyy-MM-dd');
 
         const lastFiveDaysImageResponse = await fetch(`&start_date=${fiveDaysAgoDate}&end_date=${todaysDtae}`)
         setLastFiveDaysImages(lastFiveDaysImageResponse);
