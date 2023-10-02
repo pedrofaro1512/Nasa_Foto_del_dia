@@ -15,16 +15,23 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pedroromero.nasa"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.pedroromero.nasa"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "be4c3814-ef32-4f7f-8bc5-de3e1a151b89"
+      }
     }
   }
 }
